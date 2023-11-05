@@ -63,7 +63,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 150, 'easeInOutExpo');
         return false;
     });
 
@@ -112,3 +112,19 @@
     
 })(jQuery);
 
+     //Calendario
+    var hoy = new Date();
+    var dd = hoy.getDate();
+    var mm = hoy.getMonth() + 1; //January is 0!
+    var aaaa = hoy.getFullYear();
+
+         if (dd < 10) {
+           dd = '0' + dd;
+      }
+
+          if (mm < 10) {
+            mm = '0' + mm;
+      } 
+    
+             hoy = aaaa + '-' + mm + '-' + dd;
+             document.getElementById("datefield").setAttribute("min", hoy);

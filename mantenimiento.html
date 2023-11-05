@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ZonaBiker - Servicio de calidad sobre dos ruedas.</title>
+    <title>ZonaBiker - Mantenimiento.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/icono_moto.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
@@ -73,15 +72,13 @@
             <h1 class="display-3 text-white mb-3 animated slideInDown">Cita para Mantenimiento</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Pricing</li>
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="contact.html">Contacto</a></li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
-
 
     <!-- Quote Start -->
     <div class="container-xxl py-5">
@@ -90,7 +87,7 @@
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="text-secondary text-uppercase mb-3">Citas</h6>
                     <h1 class="mb-5">¡Agenda una cita!</h1>
-                    <p class="mb-5">Estamos aquí para hacer que el proceso de programar el mantenimiento de tu moto sea simple y sin complicaciones. No dudes en contactarnos en cualquier momento para programar tu cita y asegurarte de que tu moto esté en las mejores condiciones posibles.</p>
+                    <p class="text-justify">Estamos aquí para hacer que el proceso de programar el mantenimiento de tu moto sea simple y sin complicaciones. No dudes en contactarnos en cualquier momento para programar tu cita y asegurarte de que tu moto esté en las mejores condiciones posibles.</p>
                     <div class="d-flex align-items-center">
                         <i class="fa fa-phone-alt fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
                         <div class="ps-4">
@@ -113,27 +110,59 @@
                                     <input type="text" class="form-control border-0" placeholder="Celular" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Selecciona un servicio</option>
-                                        <option value="1">Cambio de aceite</option>
-                                        <option value="2">Balatas</option>
-                                        <option value="3">Líquido de frenos</option>
-                                        <option value="4">Anticongelante</option>
-                                        <option value="5">Servicio de cadena</option>
-                                        <option value="6">neumáticos</option>
-                                    </select>
+                                    
+                                    <form name="f1" id="formElement">
+                                        <p class="col-10">
+                                            <details>
+                                                <style>
+                                                    details > summary {
+                                                      padding: 4px;
+                                                      width: 200px;
+                                                      background-color: #FF3E41;
+                                                      border: none;
+                                                      box-shadow: 2px 2px 4px #9b070a;
+                                                      cursor: pointer;
+                                                      color: #ffffff;
+                                                    }
+                                                    details > p {
+                                                      background-color: #eeeeee;
+                                                      padding: 0px;
+                                                      margin: 0;
+                                                    }
+                                                    </style> 
+                                            <summary class="col-12"> Desplegar Servicios </summary>                                       
+                                            
+                                            <p><input type="checkbox" name="ch1" class="mycheck" /> Cambio de aceite</p>
+                                            
+                                            <p><input type="checkbox" name="ch2" class="mycheck"/> Balatas</p>
+                                            
+                                            <p> <input type="checkbox" name="ch3" class="mycheck"/> Líquido de frenos</p>
+                                            
+                                            <p><input type="checkbox" name="ch4" class="mycheck"/> Anticongelante</p>
+                                            
+                                            <p><input type="checkbox" name="ch4" class="mycheck"/> Servicio de Cadena</p>
+                                            
+                                            <p><input type="checkbox" name="ch4" class="mycheck"/> Neumáticos</p>
+                                        
+                                         </p>
+                                        </details>
+                                      </form>
                                 </div>
+
                                 <div class="col-12">
                                     <textarea type="text" class="form-control border-0" placeholder="Marca, modelo, año y kilometraje moto"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <textarea type="text" class="form-control border-0" placeholder="¿Qué le sucede a su moto?"></textarea>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                  <p  class="mb-2">Acepto <a href="terminos_condiciones.htm">términos y condiciones  <input type="checkbox" class="checkbox" style="height: 20px;"></a></p>
+                                <div class="col-12">
+                                    <input type="date" class="form-control border-top" id="datefield">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p  class="mb-2" >Acepto <a href="PDFs/Terminos_y_Condiciones.pdf">términos y condiciones.&ensp; </a><input type="checkbox" class="mycheck" style="height: 20px;"></p>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Agendar Cita</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit" value="" id="">Agendar Cita</button>
                                 </div>
                             </div>
                         </form>
@@ -144,7 +173,6 @@
     </div>
     <!-- Quote End -->
         
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
         <div class="container py-5">
@@ -152,8 +180,8 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Dirección</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><a href="https://maps.app.goo.gl/kPfb3c1ybK4RSwYy5">Av Sur 8 52, Agrícola oriental, Iztacalco, CDMX, México</a></p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(55) 3432-2061</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(55) 2260-5451</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+525534322061">(55) 3432-2061</a></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+525522605451">(55) 2260-5451</a></p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>zonabiker@outlook.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -164,20 +192,16 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Servicios</h4>
-                    <a class="btn btn-link" href="">Mantenimiento</a>
-                    <a class="btn btn-link" href="">Reparaciones Mecánicas</a>
-                    <a class="btn btn-link" href="">Servicio neumático</a>
-                    <a class="btn btn-link" href="">Pintura y Personalización</a>
-                    <a class="btn btn-link" href="">Seguridad e Inspección</a>
-                    <a class="btn btn-link" href="">Venta de repuestos y accesorios</a>
+                    <a class="btn btn-link" href="mantenimiento.html">Mantenimiento</a>
+                    <a class="btn btn-link" href="personalizacion.html">Pintura y Personalización</a>
+                    <a class="btn btn-link" href="accesorios.html">Venta de repuestos y accesorios</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Links Rápidos</h4>
-                    <a class="btn btn-link" href="">¿Quiénes somos?</a>
-                    <a class="btn btn-link" href="">Contáctanos</a>
-                    <a class="btn btn-link" href="">Servicios</a>
-                    <a class="btn btn-link" href="">Términos y Condiciones</a>
-                    <a class="btn btn-link" href="">Soporte</a>
+                    <a class="btn btn-link" href="about.html">¿Quiénes somos?</a>
+                    <a class="btn btn-link" href="contact.html">Contáctanos</a>
+                    <a class="btn btn-link" href="service.html">Servicios</a>
+                    <a class="btn btn-link" href="testimonial.html">Testimonios</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Recibir Notificaciones</h4>
@@ -193,17 +217,16 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">ZonaBiker</a>, Todos los derechos reservados.
+                        &copy; <a class="border-bottom" href="index.html">ZonaBiker</a>, Todos los derechos reservados.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        Creado por <a class="border-bottom" href="">Equipo MOTORDATE</a>
+                        Creado por <a class="border-bottom" href="about.html">Equipo MOTORDATE</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
