@@ -101,13 +101,13 @@
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Nombre completo" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" placeholder="Nombre completo" style="height: 55px;" maxlength="35">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Correo electrónico" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" placeholder="Correo electrónico" style="height: 55px;" maxlength="40">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Celular" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" placeholder="Celular" style="height: 55px" maxlength="14" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     
@@ -120,17 +120,18 @@
                                                       width: 200px;
                                                       background-color: #FF3E41;
                                                       border: none;
-                                                      box-shadow: 2px 2px 4px #9b070a;
+                                                      box-shadow: 0px 0px 0px #9b070a;
                                                       cursor: pointer;
                                                       color: #ffffff;
                                                     }
                                                     details > p {
                                                       background-color: #eeeeee;
-                                                      padding: 0px;
+                                                      padding: 1px;
                                                       margin: 0;
+                                                      text-align: left;
                                                     }
                                                     </style> 
-                                            <summary class="col-12"> Desplegar Servicios </summary>                                       
+                                            <summary class="col-12">Desplegar Servicios </summary>                                       
                                             
                                             <p><input type="checkbox" name="ch1" class="mycheck" /> Cambio de aceite</p>
                                             
@@ -150,14 +151,26 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <textarea type="text" class="form-control border-0" placeholder="Marca, modelo, año y kilometraje moto"></textarea>
+                                    <textarea type="text" class="form-control border-0" placeholder="Marca, modelo, año y kilometraje moto" maxlength="40"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <textarea type="text" class="form-control border-0" placeholder="¿Qué le sucede a su moto?"></textarea>
+                                    <textarea type="text" class="form-control border-0" placeholder="¿Qué le sucede a su moto?" maxlength="600"></textarea>
                                 </div>
-                                <div class="col-12">
-                                    <input type="date" class="form-control border-top" id="datefield">
+                                <div class="col-12 col-sm-6">
+                                     <input type="date" class="form-control border-0" id="datefield" placeholder="dd/mm/aaaa">
                                 </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0">
+                                        <option selected>Hora:</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="17:30">17:30</option>
+                                    </select>
+                               </div>
+                                <div class="col-12"><p class="col-12 text-justify"><i>Envíanos una imagen que ayude a entender mejor la situación: <b><br>.png, .jpeg, .jpg, .gif</b></p></i>
+                                    <input type="file" class="form-control border-2" name="" accept="image/*">
+                               </div>
                                 <div class="col-12 col-md-6">
                                     <p  class="mb-2" >Acepto <a href="PDFs/Terminos_y_Condiciones.pdf">términos y condiciones.&ensp; </a><input type="checkbox" class="mycheck" style="height: 20px;"></p>
                                 </div>

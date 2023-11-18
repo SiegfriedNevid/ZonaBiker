@@ -115,7 +115,7 @@
      //Calendario
     var hoy = new Date();
     var dd = hoy.getDate();
-    var mm = hoy.getMonth() + 1; //January is 0!
+    var mm = hoy.getMonth() + 1; //Enero es 0
     var aaaa = hoy.getFullYear();
 
          if (dd < 10) {
