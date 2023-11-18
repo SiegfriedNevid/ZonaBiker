@@ -130,19 +130,19 @@
                                                       margin: 0;
                                                       text-align: left;
                                                     }
-                                                    
                                                     </style> 
+
                                             <summary class="col-12">Desplegar Servicios </summary>                                       
                                             
                                             <p><input type="checkbox" name="ch1" class="mycheck" /> Cambio de aceite</p>
                                             
                                             <p><input type="checkbox" name="ch2" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Balatas</p>
                                             
-                                            <p><input type="checkbox" name="ch2" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Líquido de Frenos</p>
+                                            <p><input type="checkbox" name="ch3" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Líquido de Frenos</p>
                                             
                                             <p><input type="checkbox" name="ch4" class="mycheck"/> Anticongelante</p>
                                             
-                                            <p><input type="checkbox" name="ch2" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Servicio de Cadena</p>
+                                            <p><input type="checkbox" name="ch5" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Servicio de Cadena</p>
                                             
                                             <p><input type="checkbox" name="ch6" class="mycheck"/> Neumáticos</p>
 
@@ -150,8 +150,7 @@
                                               <div id="cuadroTexto" class="hidden">
                                                     <input type="text" class="form-control border-0" placeholder="Dirección" style="height: 55px;" maxlength="35" required autocomplete="off">
                                                     <p class="col-12 text-justify"><i>Para este tipo de servicio es posible que tengamos que ir hasta su domicilio <b>por su seguridad.</b></p></i>
-                                                </div>
-
+                                              </div>
                                         </details>
                                       </form>
                                 </div>
@@ -163,10 +162,11 @@
                                     <textarea type="text" class="form-control border-0" placeholder="¿Qué le sucede a su moto?" maxlength="600"></textarea>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                     <input type="text" class="form-control border-0" id="datefield" placeholder="DD/MM/AAAA" onfocus="this.type='date'" required autocomplete="off">
+                                    <p class="col-12 text-primary"><b>Fecha de cita:</b><input type="date" class="form-control border-0 text-center" id="datefield" required style="width: 306px;">
                                 </div>
+                                
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0">
+                                    <select class="form-select border-0" required style="height: 77px;">
                                         <option selected>Hora:</option>
                                         <option value="10:00">10:00</option>
                                         <option value="12:00">12:00</option>

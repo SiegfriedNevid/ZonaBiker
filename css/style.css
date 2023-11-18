@@ -527,3 +527,8 @@
     .mycheck:disabled:checked {
       background-color: rgb(198, 198, 198);
     }
+/*Icono de calendario*/
+.calendar-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+  }
