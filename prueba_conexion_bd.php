@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="esp">
-
 <head>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -9,11 +8,11 @@
 </head>
 
 <body>
+
     <?php 
          include_once("conexion_bd.php");
-
-         conexion::conexionBD();
+         Cconexion::conexionBD();
     ?>
-</body>
 
+</body>
 </html>

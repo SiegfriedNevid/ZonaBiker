@@ -1,8 +1,8 @@
 <?php 
 
-class conexion{
+class Cconexion{
 
-    function conexionBD(){
+  public function conexionBD(){
 
         $host="localhost";
         $dbnom="ZONABIKER";

@@ -128,3 +128,16 @@
     
              hoy = aaaa + '-' + mm + '-' + dd;
              document.getElementById("datefield").setAttribute("min", hoy);
+
+    //Direccion cliente
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var cuadrosTexto = document.querySelectorAll('.hidden');
+        cuadrosTexto.forEach(function(cuadroTexto) {
+          cuadroTexto.style.display = 'none';
+        });
+      });
+    function mostrarCuadroTexto(checkbox, cuadroTextoId) {
+        var cuadroTexto = document.getElementById(cuadroTextoId);
+        cuadroTexto.style.display = checkbox.checked ? "" : "none";
+      }
