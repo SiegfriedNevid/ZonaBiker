@@ -532,3 +532,20 @@
     font-size: 1.2em;
     cursor: pointer;
   }
+  
+/*Listado de Servicios en formulario*/
+  details > summary {
+    padding: 4px;
+    width: 200px;
+    background-color: #FF3E41;
+    border: none;
+    box-shadow: 0px 0px 0px #9b070a;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  details > p {
+    background-color: #eeeeee;
+    padding: 1px;
+    margin: 0;
+    text-align: left;
+  }
