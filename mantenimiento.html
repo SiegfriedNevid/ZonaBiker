@@ -98,73 +98,73 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
-                        <form action="https://formsubmit.co/jordanjimenezipn@gmail.com" method="post">
+                        <form id="formulario" action="https://formsubmit.co/siegfriedcequera@gmail.com" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Nombre completo" style="height: 55px;" maxlength="35" required autocomplete="off">
+                                    <input type="text" class="form-control border-0" name="name" placeholder="Nombre completo" style="height: 55px;" maxlength="35" required autocomplete="off">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Correo electrónico" style="height: 55px;" maxlength="40" required autocomplete="off">
+                                    <input type="email" class="form-control border-0" name="correo" placeholder="Correo electrónico" style="height: 55px;" maxlength="40" required autocomplete="off">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Celular" style="height: 55px" maxlength="14" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
+                                    <input type="text" class="form-control border-0" name="celular" placeholder="Celular" style="height: 55px" maxlength="14" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
                                 </div>                                
                                 <div class="col-12 col-sm-6" id="direccionInput">
-                                    
                                         <p class="col-10">
                                             <details>
-                                            <summary class="col-12">Desplegar Servicios </summary>                                       
+                                            <summary class="col-12" >Desplegar Servicios </summary>                                       
                                             
-                                            <p><input type="checkbox" name="ch1" class="mycheck" /> Cambio de aceite</p>
+                                            <p><input type="checkbox" name="Cambio_de_aceite" class="mycheck"/> Cambio de aceite</p>
                                             
-                                            <p><input type="checkbox" name="ch2" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Balatas</p>
+                                            <p><input type="checkbox" name="Balatas"  class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Balatas</p>
                                             
-                                            <p><input type="checkbox" name="ch3" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Líquido de Frenos</p>
+                                            <p><input type="checkbox" name="Liquido_de_frenos" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Líquido de Frenos</p>
                                             
-                                            <p><input type="checkbox" name="ch4" class="mycheck"/> Anticongelante</p>
+                                            <p><input type="checkbox" name="Anticongelante" class="mycheck"/> Anticongelante</p>
                                             
-                                            <p><input type="checkbox" name="ch5" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Servicio de Cadena</p>
+                                            <p><input type="checkbox" name="Servicio_de_cadena" class="mycheck" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Servicio de Cadena</p>
                                             
-                                            <p><input type="checkbox" name="ch6" class="mycheck"/> Neumáticos</p>
-
+                                            <p><input type="checkbox" name="Neumaticos" class="mycheck"/> Neumáticos</p>
+                                            
                                             <!--Dirección oculta-->
-                                              <div id="cuadroTexto" class="hidden">
-                                                    <input type="text" class="form-control border-0" placeholder="Dirección" style="height: 55px;" maxlength="35" required autocomplete="off">
+                                            <div id="cuadroTexto" class="hidden">
+                                                    <input type="text" class="form-control border-0" name="dirección" placeholder="Dirección" style="height: 55px;" maxlength="35">
                                                     <p class="col-12 text-justify"><i>Para este tipo de servicio es posible que tengamos que ir hasta su domicilio <b>por su seguridad.</b></p></i>
                                               </div>
-                                        </details>
-                                      
-                                </div>
-
-                                <div class="col-12">
-                                    <textarea type="text" class="form-control border-0" placeholder="Marca, modelo, año y kilometraje moto" maxlength="40" required></textarea>
+                                        </details>     
                                 </div>
                                 <div class="col-12">
-                                    <textarea type="text" class="form-control border-0" placeholder="¿Qué le sucede a su moto?" maxlength="600" required></textarea>
+                                    <textarea type="text" class="form-control border-0" name="Marca, modelo, año y kilometraje moto" placeholder="Marca, modelo, año y kilometraje moto" maxlength="40" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <textarea type="text" class="form-control border-0" name="¿Qué le sucede a su moto?" placeholder="¿Qué le sucede a su moto?" maxlength="600" required></textarea>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <p class="col-12 text-primary"><b>Fecha de cita:</b><input type="date" class="form-control border-0 text-center" id="datefield" required>
-                                </div>
-                                
+                                    <p class="col-12 text-primary"><b>Fecha de cita:</b><input type="date" class="form-control border-0 text-center" name="fecha" id="datefield" required>
+                                </div>   
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" required style="height: 77px;">
-                                        <option selected>Hora:</option>
-                                        <option value="10:00">10:00</option>
-                                        <option value="12:00">12:00</option>
-                                        <option value="13:00">13:00</option>
-                                        <option value="17:30">17:30</option>
+                                    <select class="form-select border-0" name="hora" required style="height: 77px;">
+                                        <option name="hora" selected>Hora:</option>
+                                        <option name="10:00" value="10:00">10:00</option>
+                                        <option name="12:00" value="12:00">12:00</option>
+                                        <option name="13:00" value="13:00">13:00</option>
+                                        <option name="17:30" value="17:30">17:30</option>
                                     </select>
                                </div>
                                 <div class="col-12">
-                                    <input type="file" class="form-control border-2" name="" accept="image/*"><br>
+                                    <input type="file" class="form-control border-2" name="imagen" accept="image/*"><br>
                                     <p class="col-12 text-justify"><i>Envíanos una imagen que ayude a entender mejor la situación: <b>.png, .jpeg, .jpg, .gif</b></p></i>
                                </div>
                                 <div class="col-12  text-center">
                                     <p  class="mb-2" >Acepto <a href="PDFs/Terminos_y_Condiciones.pdf">términos y condiciones.&ensp; </a><input type="checkbox" class="mycheck" style="height: 20px;" required autocomplete="off"></p>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit" value="" id="">Agendar Cita</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit" value="Enviar" id="">Agendar Cita</button>
                                 </div>
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_subject" value="Mensaje de nuevo cliente">
+                                <input type="hidden" name="_cc" value="jordanjimenez517@gmail.com">
                             </div>
                         </form>
                     </div>
