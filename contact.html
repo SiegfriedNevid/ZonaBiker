@@ -51,13 +51,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">¿Quiénes somos?</a>
+                <a href="sobre_nosotros.html" class="nav-item nav-link">¿Quiénes somos?</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="mantenimiento.html" class="dropdown-item">Mantenimiento</a>
-                        <a href="team.html" class="dropdown-item">Pintura y Personalización</a>
-                        <a href="service.html" class="dropdown-item">Venta de repuestos y accesorios</a>
+                        <a href="pintura_y_personalizacion.html" class="dropdown-item">Pintura y Personalización</a>
+                        <a href="accesorios.html" class="dropdown-item">Venta de repuestos y accesorios</a>
                     </div>
                 </div>
                 <a href="testimonial.html" class="nav-item nav-link">Testimonios</a>
@@ -76,7 +76,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white">Horario de Atención:</a></li>
                     <li class="breadcrumb-item"><a class="text-white">L-V: 08:00 - 20:00</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Sábados: 12:00 - 18:00</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Sábados: 12:00 - 19:00</li>
                 </ol>
             </nav>
         </div>
@@ -90,7 +90,7 @@
                 <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
                     <h6 class="text-secondary text-uppercase">Ponte en contacto</h6>
                     <h1 class="mb-4">Contáctanos por cualquier duda</h1>
-                    <p class="text-justify">¿Tienes alguna pregunta, comentario o necesitas ponerse en contacto con nosotros? ¡Estamos aquí para ayudarte! Utiliza nuestro formulario de contacto fácil de usar para enviarnos un mensaje.</p>
+                    <p class="text-justify">¿Tienes alguna pregunta, comentario o necesitas ponerse en contacto con nosotros? ¡Estamos aquí para ayudarte! Utiliza nuestro formulario de contacto fácil de usar para enviarnos un mensaje.</p><p>Haznos todas las preguntas que requieras resolver sin ningún problema.</p>
                     <div class="bg-light p-4">
                        
                         <form action="https://formsubmit.co/siegfriedcequera@gmail.com" method="post">
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                                        <input type="email" class="form-control" id="infoInput" placeholder="Your Email" name="email">
                                         <label for="email">Correo electrónico</label>
                                     </div>
                                 </div>
@@ -120,16 +120,23 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar Mensaje</button>
+                                    <script>
+                                    function copiarInformacion() {
+                                        var informacionIngresada = document.getElementById('infoInput').value; // Obtener el valor del cuadro de texto
+                                        document.getElementById('outputCampo').value = informacionIngresada;// Asignar el valor al campo oculto
+                                      }   
+                                      </script>
+                                    <button class="btn btn-primary w-100 py-3" type="submit" onclick="copiarInformacion()">Enviar Mensaje</button>
                                 </div>
                             </div>
-                        </form>
+                        
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_subject" value="Mensaje de nuevo cliente">
-                        <input type="hidden" name="_cc" value="jordanjimenez517@gmail.com">
+                        <input type="hidden" id="outputCampo" name="_cc">
                     </div>
                 </div>
+            </form>
                 <div class="col-md-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s">
                     <div class="position-relative h-100">
                         <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
@@ -141,6 +148,7 @@
             </div>
         </div>
     </div>
+ 
     <!-- Contact End -->
 
     <!-- Footer Start -->
@@ -153,32 +161,30 @@
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+525534322061">(55) 3432-2061</a></p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+525522605451">(55) 2260-5451</a></p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>zonabiker@outlook.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Servicios</h4>
+                    <h4 class="text-light mb-4"><a href="service.html">Servicios</a></h4>
                     <a class="btn btn-link" href="mantenimiento.html">Mantenimiento</a>
-                    <a class="btn btn-link" href="personalizacion.html">Pintura y Personalización</a>
+                    <a class="btn btn-link" href="pintura_y_personalizacion.html">Pintura y Personalización</a>
                     <a class="btn btn-link" href="accesorios.html">Venta de repuestos y accesorios</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Links Rápidos</h4>
-                    <a class="btn btn-link" href="about.html">¿Quiénes somos?</a>
+                    <a class="btn btn-link" href="sobre_nosotros.html">¿Quiénes somos?</a>
                     <a class="btn btn-link" href="contact.html">Contáctanos</a>
                     <a class="btn btn-link" href="service.html">Servicios</a>
                     <a class="btn btn-link" href="testimonial.html">Testimonios</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Recibir Notificaciones</h4>
-                    <p>Mantente actualizado de todas nuestros servicios y promociones.</p>
+                    <h4 class="text-light mb-4">¡No dudes en comunicarte!</h4>
+                    <p class="text-justify">Mantente actualizado de todos nuestros servicios y promociones.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Correo">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirse</button>
+                        <script>
+                        function redirigir() {
+                            window.location.href = 'contact.html';
+                        }
+                        </script>
+                        <button class="btn btn-primary w-100 py-3" type="submit" onclick="redirigir()">Contáctanos</button>
                     </div>
                 </div>
             </div>
@@ -190,7 +196,7 @@
                         &copy; <a class="border-bottom" href="index.html">ZonaBiker</a>, Todos los derechos reservados.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        Creado por <a class="border-bottom" href="about.html">Equipo MOTORDATE</a>
+                        Creado por <a class="border-bottom" href="sobre_nosotros.html">Equipo MOTORDATE</a>
                     </div>
                 </div>
             </div>

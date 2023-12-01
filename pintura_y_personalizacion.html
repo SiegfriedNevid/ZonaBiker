@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ZonaBiker - Mantenimiento</title>
+    <title>ZonaBiker - Pintura y Personalización</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -69,7 +69,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Cita para Mantenimiento</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Cita para Pintura y Personalización</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="index.html">Inicio</a></li>
@@ -85,7 +85,7 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase mb-3">Citas de Mantenimiento</h6>
+                    <h6 class="text-secondary text-uppercase mb-3">Citas de Pintura y Personalización</h6>
                     <h1 class="mb-5">¡Agenda una cita!</h1>
                     <p class="text-justify">Estamos aquí para hacer que el proceso de programar el mantenimiento de tu moto sea simple y sin complicaciones. No dudes en contactarnos en cualquier momento para programar tu cita y asegurarte de que tu moto esté en las mejores condiciones posibles.</p>
                     <div class="d-flex align-items-center">
@@ -126,36 +126,25 @@
                                             <details>
                                             <summary class="col-12" >Desplegar Servicios </summary>                                       
                                             
-                                            <p><input type="checkbox" name="Servicio&nbsp;1:" class="mycheck" value="Cambio de Aceite"/> Cambio de aceite</p>
+                                            <p><input type="checkbox" name="Servicio&nbsp;1:" class="mycheck" value="Vinilado"/> Vinilado</p>
                                             
-                                            <p><input type="checkbox" name="Servicio&nbsp;2:"  class="mycheck" value="Balatas" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Balatas</p>
+                                            <p><input type="checkbox" name="Servicio&nbsp;2:"  class="mycheck" value="Aerografía"/> Aerografía</p>
                                             
-                                            <p><input type="checkbox" name="Servicio&nbsp;3:" class="mycheck" value="Líquido de Frenos" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Líquido de Frenos</p>
+                                            <p><input type="checkbox" name="Servicio&nbsp;3:" class="mycheck" value="Pintura"/> Pintura</p>
                                             
-                                            <p><input type="checkbox" name="Servicio&nbsp;4:" class="mycheck" value="Anticongelante"/> Anticongelante</p>
+                                            <p><input type="checkbox" name="Servicio&nbsp;4:" class="mycheck" value="Restauración"/> Restauración</p>
                                             
-                                            <p><input type="checkbox" name="Servicio&nbsp;5:" class="mycheck" value="Servicio de Cadena" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Servicio de Cadena</p>
+                                            <p><input type="checkbox" name="Servicio&nbsp;5:" class="mycheck" value="Asesoramiento de Diseño"/> Asesoramiento de Diseño</p>
                                             
-                                            <p><input type="checkbox" name="Servicio&nbsp;6:" class="mycheck" value="Neumáticos"/> Neumáticos</p>
-                                            
-                                            <p><input type="checkbox" name="Servicio&nbsp;7:" class="mycheck" value="Reparación Mecánica" onchange="mostrarCuadroTexto(this, 'cuadroTexto')" /> Reparación Mecánica</p>
-                                            
-                                            <p><input type="checkbox" name="Servicio&nbsp;8:" class="mycheck" value="Mantenimiento General"/> Mantenimiento General</p>
+                                            <p><input type="checkbox" name="Servicio&nbsp;6:" class="mycheck" value="Texturizados"/> Texturizados</p>
 
-                                            <p><input type="checkbox" name="Servicio&nbsp;9:" class="mycheck" value="Seguridad e Inspección"/> Seguridad e Inspección</p>
-                                           
-                                            <!--Dirección oculta-->
-                                            <div id="cuadroTexto" class="hidden">
-                                                    <input type="text" class="form-control border-0" name="Dirección:" id="direccionInput" placeholder="Dirección" style="height: 55px;" maxlength="35">
-                                                    <p class="col-12 text-justify"><i>Para este tipo de servicio es posible que tengamos que ir hasta su domicilio <b>por su seguridad.</b> *Este campo es opcional*</p></i>
-                                              </div>
                                         </details>     
                                 </div>
                                 <div class="col-12">
                                     <textarea type="text" class="form-control border-0" name="Marca,&nbsp;modelo,&nbsp;año&nbsp;y&nbsp;kilometraje&nbsp;de&nbsp;la&nbsp;moto:" placeholder="Marca, modelo, año y kilometraje moto" maxlength="40" required></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <textarea type="text" class="form-control border-0" name="¿Qué&nbsp;le&nbsp;sucede&nbsp;a&nbsp;su&nbsp;moto?" placeholder="¿Qué le sucede a su moto?" maxlength="600" required></textarea>
+                                    <textarea type="text" class="form-control border-0" name="¿Qué&nbsp;le&nbsp;quiere&nbsp;hacer&nbsp;a&nbsp;su&nbsp;moto?" placeholder="¿Qué le quiere hacer a su moto?" maxlength="600" required></textarea>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <p class="col-12 text-primary"><b>Fecha de cita:</b><input type="date" class="form-control border-0 text-center" name="Fecha:" id="datefield" required>
@@ -192,11 +181,10 @@
                                     <button class="btn btn-primary w-100 py-3" type="submit" value="Enviar" onclick="copiarInformacion(), generarYEnviarNumero()">Agendar Cita</button>
                                     <input type="hidden" name="Folio:" id="numeroAleatorio" readonly>
                                 </div>
-                                
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_template" value="table">
                                 <input type="hidden" name="_subject" value="Mensaje de nuevo cliente">
-                                <input type="hidden" id="outputCampo" name="_cc">                        
+                                <input type="hidden" id="outputCampo" name="_cc"> 
                             </div>
                         </form>
                     </div>

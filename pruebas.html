@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar por Correo con Formsubmit</title>
+</head>
+<body>
+
+    <!-- Formulario con el campo oculto para el valor copiado -->
+    <form action="https://formsubmit.co/siegfriedcequera@gmail.com" method="POST">
+
+        <!-- Cuadro de texto para ingresar información -->
+        <input type="email" id="infoInput" name="informacion" placeholder="Ingrese información">
+
+        <!-- Botón para copiar el valor -->
+        <button type="button" onclick="copiarInformacion()">Copiar Información</button>
+
+        <!-- Campo de entrada oculto para el valor copiado -->
+        <input type="text" id="outputCampo" name="valor_copiado">
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Enviar por Correo</button>
+
+    </form>
+
+    <!-- Script para copiar el valor -->
+    <script>
+        function copiarInformacion() {
+            // Obtener el valor del cuadro de texto
+            var informacionIngresada = document.getElementById('infoInput').value;
+
+            // Asignar el valor al campo oculto
+            document.getElementById('outputCampo').value = informacionIngresada;
+
+          
+        }
+    </script>
+
+</body>
+</html>
