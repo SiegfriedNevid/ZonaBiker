@@ -557,15 +557,6 @@
     border-radius: 8px; /* Esquinas redondeadas */
     transition: transform 0.3s ease-in-out; /* Transición para el efecto de zoom */
 }
-
-img:hover {
-    transform: scale(1.1); /* Zoom al pasar el cursor */
-}
-
-
-
-
-
 /* Estilo para la imagen que actúa como checkbox */
 .checkbox-img {
     width: 200px;

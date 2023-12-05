@@ -30,64 +30,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     
-   <!-- Estilo para checkbox-imagenes -->
-<style>
-.checkbox-img {
-    width: 200px;
-    height: 150px;
-    position: relative;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease-in-out;
-    margin: 10px;
-    float: left;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.checkbox-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Estilo para el relieve */
-.checkbox-img:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    pointer-events: none;
-}
-
-/* Estilo para la paloma que aparece al seleccionar la imagen */
-.checkmark {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-opacity: 0;
-transition: opacity 0.3s ease-in-out;
-width: 10px; /* Ajusta el tamaño según tus preferencias */
-height: 10px; /* Ajusta el tamaño según tus preferencias */
-border-radius: 8px;
-}
-
-/* Estilo para la imagen cuando está seleccionada */
-.checkbox-img.selected .checkmark {
-    opacity: 1;
-}
-
-/* Estilo para el contenedor del total */
-.total-container {
-    clear: both;
-    text-align: center;
-    margin-top: 20px;
-}</style>
 </head>
 
 <body>
